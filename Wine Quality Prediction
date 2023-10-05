@@ -1,0 +1,36 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df=pd.read_csv("WineQT.csv")
+
+print(df.head(5))
+
+df
+
+df.head()
+
+df.tail()
+
+df.shape
+
+df.isnull()
+
+dt=df.dtypes
+
+dt
+
+df.info()
+
+df.describe().T
+
+df.isnull().sum()
+
+df.hist(bins=20, figsize=(10, 10))
+plt.show()
+
+plt.bar(df['quality'], df['alcohol'])
+plt.xlabel('quality')
+plt.ylabel('alcohol')
+plt.show()
+
